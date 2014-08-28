@@ -56,15 +56,5 @@
     <script type="text/javascript">
         app.initialize();
     </script>
-    <script type="text/javascript">
-        if (window.addEventListener) window.addEventListener("load", onload_proc, false);
-        else if (window.attachEvent) window.attachEvent("onload", onload_proc);
-        function onload_proc() {
-            window.onresize = function () {
-                $("#wrapper").css("height", $(window).height());
-            };
-            window.onresize();
-        };
-    </script>
 </body>
 </html>
