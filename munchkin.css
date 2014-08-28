@@ -1,0 +1,18 @@
+#wrapper {
+    background-color: #ffd09a;
+    background-image: url("shoulderL.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tbl {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+}
+.tbl-row {
+    height: 30%;
+}
+.tbl-col {
+    padding: 3%;
+}

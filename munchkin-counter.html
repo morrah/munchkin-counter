@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Munchkin Life Counter</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="munchkin.css">
+    <link rel="stylesheet" href="jquery.mobile-1.4.3/jquery.mobile-1.4.3.min.css" />
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="jquery.mobile-1.4.3/jquery.mobile-1.4.3.min.js"></script>
+    <script src="jqm-spinbox.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <table class="tbl">
+            <tr id='tbl_row' class='tbl-row'>
+                <td class="tbl-col">
+                    <input type="text"/>
+                    <input type="text" data-role="spinbox" name="spin" id="spin" value="1" min="1" max="10" />
+                </td>
+                <td class="tbl-col">
+                    <input type="text"/>
+                    <input type="text" data-role="spinbox" name="spin" id="spin" value="1" min="1" max="10" />
+                </td>
+            </tr>
+            <tr id='tbl_row' class='tbl-row'>
+                <td class="tbl-col">
+                    <input type="text"/>
+                    <input type="text" data-role="spinbox" name="spin" id="spin" value="1" min="1" max="10" />
+                </td>
+                <td class="tbl-col">
+                    <input type="text"/>
+                    <input type="text" data-role="spinbox" name="spin" id="spin" value="1" min="1" max="10" />
+                </td>
+            </tr>
+            <tr id='tbl_row' class='tbl-row'>
+                <td class="tbl-col">
+                    <input type="text"/>
+                    <input type="text" data-role="spinbox" name="spin" id="spin" value="1" min="1" max="10" />
+                </td>
+                <td class="tbl-col">
+                    <input type="text"/>
+                    <input type="text" data-role="spinbox" name="spin" id="spin" value="1" min="1" max="10" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript">
+        if (window.addEventListener) window.addEventListener("load", onload_proc, false);
+        else if (window.attachEvent) window.attachEvent("onload", onload_proc);
+        function onload_proc() {
+            window.onresize = function () {
+                $("#wrapper").css("height", $(window).height());
+            };
+            window.onresize();
+        };
+    </script>
+</body>
+</html>
